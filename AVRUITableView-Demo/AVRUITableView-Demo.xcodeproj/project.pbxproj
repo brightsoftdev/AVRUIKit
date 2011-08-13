@@ -20,13 +20,13 @@
 		721655EB13F68C90001E7119 /* AVRUITableView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVRUITableView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721655EF13F68C90001E7119 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		721655F113F68C90001E7119 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		721655F513F68C90001E7119 /* AVRUITableView-Demo-Info.plist */ = {isa = PBXFileReference; path = "AVRUITableView-Demo-Info.plist"; sourceTree = "<group>"; };
+		721655F513F68C90001E7119 /* AVRUITableView-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVRUITableView-Demo-Info.plist"; sourceTree = "<group>"; };
 		721655F713F68C90001E7119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		721655F913F68C90001E7119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		721655FB13F68C90001E7119 /* AVRUITableView-Demo-Prefix.pch */ = {isa = PBXFileReference; path = "AVRUITableView-Demo-Prefix.pch"; sourceTree = "<group>"; };
-		721655FC13F68C90001E7119 /* AVRAppDelegate.h */ = {isa = PBXFileReference; path = AVRAppDelegate.h; sourceTree = "<group>"; };
+		721655FB13F68C90001E7119 /* AVRUITableView-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVRUITableView-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		721655FC13F68C90001E7119 /* AVRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVRAppDelegate.h; sourceTree = "<group>"; };
 		721655FD13F68C90001E7119 /* AVRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVRAppDelegate.m; sourceTree = "<group>"; };
-		721655FF13F68C90001E7119 /* AVRViewController.h */ = {isa = PBXFileReference; path = AVRViewController.h; sourceTree = "<group>"; };
+		721655FF13F68C90001E7119 /* AVRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVRViewController.h; sourceTree = "<group>"; };
 		7216560013F68C90001E7119 /* AVRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVRViewController.m; sourceTree = "<group>"; };
 		7216560313F68C90001E7119 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AVRViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
