@@ -6,275 +6,62 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		721655D913F68C23001E7119 /* AVRUISplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721655D413F68C23001E7119 /* AVRUISplashViewController.m */; };
-		721655DA13F68C23001E7119 /* AVRUITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 721655D613F68C23001E7119 /* AVRUITabBar.m */; };
-		721655DB13F68C23001E7119 /* AVRUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 721655D813F68C23001E7119 /* AVRUITableView.m */; };
-		7216561213F68D56001E7119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216561013F68D56001E7119 /* main.m */; };
-		87BE428C13EEE5F60055EC52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BE428B13EEE5F60055EC52 /* UIKit.framework */; };
-		87BE428E13EEE5F60055EC52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BE428D13EEE5F60055EC52 /* Foundation.framework */; };
-		87BE42AF13EEEB3D0055EC52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BE42AE13EEEB3D0055EC52 /* QuartzCore.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		721655D213F68C23001E7119 /* AVRUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVRUIKit.h; sourceTree = "<group>"; };
-		721655D313F68C23001E7119 /* AVRUISplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVRUISplashViewController.h; sourceTree = "<group>"; };
-		721655D413F68C23001E7119 /* AVRUISplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVRUISplashViewController.m; sourceTree = "<group>"; };
-		721655D513F68C23001E7119 /* AVRUITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVRUITabBar.h; sourceTree = "<group>"; };
-		721655D613F68C23001E7119 /* AVRUITabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVRUITabBar.m; sourceTree = "<group>"; };
-		721655D713F68C23001E7119 /* AVRUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVRUITableView.h; sourceTree = "<group>"; };
-		721655D813F68C23001E7119 /* AVRUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVRUITableView.m; sourceTree = "<group>"; };
-		7216560D13F68CD7001E7119 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
-		7216561013F68D56001E7119 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		7216561113F68D56001E7119 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
-		87BE428713EEE5F60055EC52 /* AVRUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVRUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		87BE428B13EEE5F60055EC52 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		87BE428D13EEE5F60055EC52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		87BE42AE13EEEB3D0055EC52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		87BE428413EEE5F60055EC52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87BE42AF13EEEB3D0055EC52 /* QuartzCore.framework in Frameworks */,
-				87BE428C13EEE5F60055EC52 /* UIKit.framework in Frameworks */,
-				87BE428E13EEE5F60055EC52 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		7216560F13F68D23001E7119 /* Supporting Files */ = {
+		7216562D13F6F048001E7119 = {
 			isa = PBXGroup;
 			children = (
-				7216561013F68D56001E7119 /* main.m */,
-				7216561113F68D56001E7119 /* Prefix.pch */,
-				7216560D13F68CD7001E7119 /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		72EC854113F4A28600072424 /* AVRUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				721655D213F68C23001E7119 /* AVRUIKit.h */,
-				721655D313F68C23001E7119 /* AVRUISplashViewController.h */,
-				721655D413F68C23001E7119 /* AVRUISplashViewController.m */,
-				721655D513F68C23001E7119 /* AVRUITabBar.h */,
-				721655D613F68C23001E7119 /* AVRUITabBar.m */,
-				721655D713F68C23001E7119 /* AVRUITableView.h */,
-				721655D813F68C23001E7119 /* AVRUITableView.m */,
-				7216560F13F68D23001E7119 /* Supporting Files */,
-			);
-			path = AVRUIKit;
-			sourceTree = "<group>";
-		};
-		87BE427C13EEE5F60055EC52 = {
-			isa = PBXGroup;
-			children = (
-				72EC854113F4A28600072424 /* AVRUIKit */,
-				87BE428A13EEE5F60055EC52 /* Frameworks */,
-				87BE428813EEE5F60055EC52 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		87BE428813EEE5F60055EC52 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				87BE428713EEE5F60055EC52 /* AVRUIKit.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		87BE428A13EEE5F60055EC52 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				87BE42AE13EEEB3D0055EC52 /* QuartzCore.framework */,
-				87BE428B13EEE5F60055EC52 /* UIKit.framework */,
-				87BE428D13EEE5F60055EC52 /* Foundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		87BE428613EEE5F60055EC52 /* AVRUIKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87BE42A313EEE5F70055EC52 /* Build configuration list for PBXNativeTarget "AVRUIKit" */;
-			buildPhases = (
-				87BE428313EEE5F60055EC52 /* Sources */,
-				87BE428413EEE5F60055EC52 /* Frameworks */,
-				87BE428513EEE5F60055EC52 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AVRUIKit;
-			productName = AVRUIKit;
-			productReference = 87BE428713EEE5F60055EC52 /* AVRUIKit.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
 /* Begin PBXProject section */
-		87BE427E13EEE5F60055EC52 /* Project object */ = {
+		7216562F13F6F048001E7119 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Andrea Gelati ( http://andreagelati.com )";
 			};
-			buildConfigurationList = 87BE428113EEE5F60055EC52 /* Build configuration list for PBXProject "AVRUIKit" */;
+			buildConfigurationList = 7216563213F6F048001E7119 /* Build configuration list for PBXProject "AVRUIKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 87BE427C13EEE5F60055EC52;
-			productRefGroup = 87BE428813EEE5F60055EC52 /* Products */;
+			mainGroup = 7216562D13F6F048001E7119;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87BE428613EEE5F60055EC52 /* AVRUIKit */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		87BE428513EEE5F60055EC52 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		87BE428313EEE5F60055EC52 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				721655D913F68C23001E7119 /* AVRUISplashViewController.m in Sources */,
-				721655DA13F68C23001E7119 /* AVRUITabBar.m in Sources */,
-				721655DB13F68C23001E7119 /* AVRUITableView.m in Sources */,
-				7216561213F68D56001E7119 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
 /* Begin XCBuildConfiguration section */
-		87BE42A113EEE5F70055EC52 /* Debug */ = {
+		7216563413F6F048001E7119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVRUIKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = AVRUIKit;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		87BE42A213EEE5F70055EC52 /* Release */ = {
+		7216563513F6F048001E7119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVRUIKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = AVRUIKit;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		87BE42A413EEE5F70055EC52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = AVRUIKit/Prefix.pch;
-				INFOPLIST_FILE = AVRUIKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = AVRUIKit;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		87BE42A513EEE5F70055EC52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = AVRUIKit/Prefix.pch;
-				INFOPLIST_FILE = AVRUIKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = AVRUIKit;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87BE428113EEE5F60055EC52 /* Build configuration list for PBXProject "AVRUIKit" */ = {
+		7216563213F6F048001E7119 /* Build configuration list for PBXProject "AVRUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87BE42A113EEE5F70055EC52 /* Debug */,
-				87BE42A213EEE5F70055EC52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87BE42A313EEE5F70055EC52 /* Build configuration list for PBXNativeTarget "AVRUIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87BE42A413EEE5F70055EC52 /* Debug */,
-				87BE42A513EEE5F70055EC52 /* Release */,
+				7216563413F6F048001E7119 /* Debug */,
+				7216563513F6F048001E7119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 87BE427E13EEE5F60055EC52 /* Project object */;
+	rootObject = 7216562F13F6F048001E7119 /* Project object */;
 }
