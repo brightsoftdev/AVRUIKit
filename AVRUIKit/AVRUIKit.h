@@ -11,6 +11,5 @@
 
 #import "AVRUITableView.h"
 #import "AVRUISplashViewController.h"
-#import "AVRUITabBar.h"
 
 #endif

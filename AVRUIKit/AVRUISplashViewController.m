@@ -14,7 +14,8 @@
 @synthesize delegate;
 
 // The designated initializer. Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil 
+{
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
 		// Custom initialization
     }
@@ -22,24 +23,34 @@
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+- (void)viewDidLoad 
+{
     [super viewDidLoad];
 
     [[self view] setFrame:[[UIScreen mainScreen] bounds]]; // set the size to fit the mainScreen's size.
     [[self view] setBackgroundColor:[UIColor clearColor]]; 
     
-    currentAnimationIndex = 0; // initialize the var to 0
-    animationCount = [delegate numberOfAnimationsInSplashViewController:self];
+    if ([delegate respondsToSelector:@selector(segueViewControllerInSplashViewController:)]) {
+        UIViewController *controller = [delegate segueViewControllerInSplashViewController:self];
+        UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+        if (controller && window) {
+            [[controller view] addSubview:[self view]];
+            [window setRootViewController:controller];
+        }
+    }
 
-    if(animationCount) {
+    _currentAnimationIndex = 0; // initialize the var to 0
+    _animationCount = [delegate numberOfAnimationsInSplashViewController:self];
+
+    if (_animationCount) {
         CAAnimation *currentAnimation = nil;
-        currentAnimation = [delegate animationAtIndex:currentAnimationIndex 
+        currentAnimation = [delegate animationAtIndex:_currentAnimationIndex 
                                inSplashViewController:self]; // start from the first animation at index 0
 
-        if(currentAnimation) {
+        if (currentAnimation) {
             [currentAnimation setDelegate:self];
             [currentAnimation setRemovedOnCompletion:YES];
-            if([delegate respondsToSelector:@selector(splashViewControllerDidStartAnimations:)]) {
+            if ([delegate respondsToSelector:@selector(splashViewControllerDidStartAnimations:)]) {
                 [delegate splashViewControllerDidStartAnimations:self];
             }
             [[[self view] layer] addAnimation:currentAnimation // start to play the animation
@@ -54,46 +65,50 @@
     return YES;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning 
+{
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload 
+{
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-- (void)dealloc {
+- (void)dealloc 
+{
     [super dealloc];
 }
 
-#pragma mark -
-#pragma mark CAAnimation Delegate
+#pragma mark - CAAnimation Delegate
 
-- (void)animationDidStart:(CAAnimation *)theAnimation {
+- (void)animationDidStart:(CAAnimation *)theAnimation 
+{
     if([delegate respondsToSelector:@selector(splashViewController:didStartAnimation:atIndex:)]) {
-        [delegate splashViewController:self didStartAnimation:theAnimation atIndex:currentAnimationIndex];
+        [delegate splashViewController:self didStartAnimation:theAnimation atIndex:_currentAnimationIndex];
     }
 }
 
-- (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {
-    if(flag) { // animation is completed
-        if([delegate respondsToSelector:@selector(splashViewController:didCompleteAnimation:atIndex:)]) {
-            [delegate splashViewController:self didCompleteAnimation:theAnimation atIndex:currentAnimationIndex];
+- (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag 
+{
+    if (flag) { // animation is completed
+        if ([delegate respondsToSelector:@selector(splashViewController:didCompleteAnimation:atIndex:)]) {
+            [delegate splashViewController:self didCompleteAnimation:theAnimation atIndex:_currentAnimationIndex];
         }
 
-        currentAnimationIndex++; // hooray we can play the next animation.
+        _currentAnimationIndex++; // hooray we can play the next animation.
 
-        if(animationCount > currentAnimationIndex) {
+        if (_animationCount > _currentAnimationIndex) {
             CAAnimation *nextAnimation = nil;
-            nextAnimation = [delegate animationAtIndex:currentAnimationIndex 
+            nextAnimation = [delegate animationAtIndex:_currentAnimationIndex 
                                 inSplashViewController:self];
             
-            if(nextAnimation) {
+            if (nextAnimation) {
                 [nextAnimation setDelegate:self];
                 [nextAnimation setRemovedOnCompletion:YES];
 
@@ -101,7 +116,7 @@
                                            forKey:nil];
             }
         } else {
-            if([delegate respondsToSelector:@selector(splashViewControllerDidCompleteAnimations:)]) {
+            if ([delegate respondsToSelector:@selector(splashViewControllerDidCompleteAnimations:)]) {
                 [delegate splashViewControllerDidCompleteAnimations:self];
             }
 

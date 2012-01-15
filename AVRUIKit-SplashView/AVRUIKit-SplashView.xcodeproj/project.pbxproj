@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72761BAA14C2D49B00DA178F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72761BA914C2D49B00DA178F /* UIKit.framework */; };
+		72761BAC14C2D49B00DA178F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72761BAB14C2D49B00DA178F /* Foundation.framework */; };
+		72761BAE14C2D49B00DA178F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72761BAD14C2D49B00DA178F /* CoreGraphics.framework */; };
+		72761BB414C2D49B00DA178F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72761BB214C2D49B00DA178F /* InfoPlist.strings */; };
+		72761BB614C2D49B00DA178F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72761BB514C2D49B00DA178F /* main.m */; };
+		72761BBA14C2D49B00DA178F /* AVRUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72761BB914C2D49B00DA178F /* AVRUIAppDelegate.m */; };
+		72761BC414C2D4CB00DA178F /* AVRUISplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72761BC314C2D4CB00DA178F /* AVRUISplashViewController.m */; };
+		72761BC614C2DB1400DA178F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72761BC514C2DB1400DA178F /* QuartzCore.framework */; };
+		72761BC914C2E0C200DA178F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72761BC814C2E0C200DA178F /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72761BA514C2D49B00DA178F /* AVRUIKit-SplashView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVRUIKit-SplashView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72761BA914C2D49B00DA178F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72761BAB14C2D49B00DA178F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72761BAD14C2D49B00DA178F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72761BB114C2D49B00DA178F /* AVRUIKit-SplashView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVRUIKit-SplashView-Info.plist"; sourceTree = "<group>"; };
+		72761BB314C2D49B00DA178F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72761BB514C2D49B00DA178F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72761BB714C2D49B00DA178F /* AVRUIKit-SplashView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVRUIKit-SplashView-Prefix.pch"; sourceTree = "<group>"; };
+		72761BB814C2D49B00DA178F /* AVRUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVRUIAppDelegate.h; sourceTree = "<group>"; };
+		72761BB914C2D49B00DA178F /* AVRUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVRUIAppDelegate.m; sourceTree = "<group>"; };
+		72761BC114C2D4CB00DA178F /* AVRUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVRUIKit.h; path = ../../AVRUIKit/AVRUIKit.h; sourceTree = "<group>"; };
+		72761BC214C2D4CB00DA178F /* AVRUISplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVRUISplashViewController.h; path = ../../AVRUIKit/AVRUISplashViewController.h; sourceTree = "<group>"; };
+		72761BC314C2D4CB00DA178F /* AVRUISplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVRUISplashViewController.m; path = ../../AVRUIKit/AVRUISplashViewController.m; sourceTree = "<group>"; };
+		72761BC514C2DB1400DA178F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		72761BC714C2E0C200DA178F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		72761BC814C2E0C200DA178F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72761BA214C2D49B00DA178F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72761BC614C2DB1400DA178F /* QuartzCore.framework in Frameworks */,
+				72761BAA14C2D49B00DA178F /* UIKit.framework in Frameworks */,
+				72761BAC14C2D49B00DA178F /* Foundation.framework in Frameworks */,
+				72761BAE14C2D49B00DA178F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72761B9A14C2D49B00DA178F = {
+			isa = PBXGroup;
+			children = (
+				72761BAF14C2D49B00DA178F /* AVRUIKit-SplashView */,
+				72761BA814C2D49B00DA178F /* Frameworks */,
+				72761BA614C2D49B00DA178F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72761BA614C2D49B00DA178F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72761BA514C2D49B00DA178F /* AVRUIKit-SplashView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72761BA814C2D49B00DA178F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72761BC514C2DB1400DA178F /* QuartzCore.framework */,
+				72761BA914C2D49B00DA178F /* UIKit.framework */,
+				72761BAB14C2D49B00DA178F /* Foundation.framework */,
+				72761BAD14C2D49B00DA178F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72761BAF14C2D49B00DA178F /* AVRUIKit-SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				72761BC014C2D4AB00DA178F /* Components */,
+				72761BB814C2D49B00DA178F /* AVRUIAppDelegate.h */,
+				72761BB914C2D49B00DA178F /* AVRUIAppDelegate.m */,
+				72761BB014C2D49B00DA178F /* Supporting Files */,
+				72761BC714C2E0C200DA178F /* MainViewController.h */,
+				72761BC814C2E0C200DA178F /* MainViewController.m */,
+			);
+			path = "AVRUIKit-SplashView";
+			sourceTree = "<group>";
+		};
+		72761BB014C2D49B00DA178F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72761BB114C2D49B00DA178F /* AVRUIKit-SplashView-Info.plist */,
+				72761BB214C2D49B00DA178F /* InfoPlist.strings */,
+				72761BB514C2D49B00DA178F /* main.m */,
+				72761BB714C2D49B00DA178F /* AVRUIKit-SplashView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72761BC014C2D4AB00DA178F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				72761BC114C2D4CB00DA178F /* AVRUIKit.h */,
+				72761BC214C2D4CB00DA178F /* AVRUISplashViewController.h */,
+				72761BC314C2D4CB00DA178F /* AVRUISplashViewController.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72761BA414C2D49B00DA178F /* AVRUIKit-SplashView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72761BBD14C2D49B00DA178F /* Build configuration list for PBXNativeTarget "AVRUIKit-SplashView" */;
+			buildPhases = (
+				72761BA114C2D49B00DA178F /* Sources */,
+				72761BA214C2D49B00DA178F /* Frameworks */,
+				72761BA314C2D49B00DA178F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AVRUIKit-SplashView";
+			productName = "AVRUIKit-SplashView";
+			productReference = 72761BA514C2D49B00DA178F /* AVRUIKit-SplashView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72761B9C14C2D49B00DA178F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Push Popcorn";
+			};
+			buildConfigurationList = 72761B9F14C2D49B00DA178F /* Build configuration list for PBXProject "AVRUIKit-SplashView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72761B9A14C2D49B00DA178F;
+			productRefGroup = 72761BA614C2D49B00DA178F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72761BA414C2D49B00DA178F /* AVRUIKit-SplashView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72761BA314C2D49B00DA178F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72761BB414C2D49B00DA178F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72761BA114C2D49B00DA178F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72761BB614C2D49B00DA178F /* main.m in Sources */,
+				72761BBA14C2D49B00DA178F /* AVRUIAppDelegate.m in Sources */,
+				72761BC414C2D4CB00DA178F /* AVRUISplashViewController.m in Sources */,
+				72761BC914C2E0C200DA178F /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72761BB214C2D49B00DA178F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72761BB314C2D49B00DA178F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72761BBB14C2D49B00DA178F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72761BBC14C2D49B00DA178F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72761BBE14C2D49B00DA178F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVRUIKit-SplashView/AVRUIKit-SplashView-Prefix.pch";
+				INFOPLIST_FILE = "AVRUIKit-SplashView/AVRUIKit-SplashView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72761BBF14C2D49B00DA178F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVRUIKit-SplashView/AVRUIKit-SplashView-Prefix.pch";
+				INFOPLIST_FILE = "AVRUIKit-SplashView/AVRUIKit-SplashView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72761B9F14C2D49B00DA178F /* Build configuration list for PBXProject "AVRUIKit-SplashView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72761BBB14C2D49B00DA178F /* Debug */,
+				72761BBC14C2D49B00DA178F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72761BBD14C2D49B00DA178F /* Build configuration list for PBXNativeTarget "AVRUIKit-SplashView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72761BBE14C2D49B00DA178F /* Debug */,
+				72761BBF14C2D49B00DA178F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72761B9C14C2D49B00DA178F /* Project object */;
+}

@@ -12,11 +12,10 @@
 
 @protocol AVRUISplashViewControllerDelegate;
 
-@interface AVRUISplashViewController : UIViewController {
-    id<AVRUISplashViewControllerDelegate> delegate;
-    
-    NSUInteger currentAnimationIndex; // return the index of the current (playing) animation.
-    NSUInteger animationCount; // return the animations count provided by the delegate.
+@interface AVRUISplashViewController : UIViewController 
+{
+    NSUInteger _currentAnimationIndex; // return the index of the current (playing) animation.
+    NSUInteger _animationCount; // return the animations count provided by the delegate.
 }
 
 @property (nonatomic, assign) id<AVRUISplashViewControllerDelegate> delegate;
@@ -27,6 +26,7 @@
 - (NSUInteger)numberOfAnimationsInSplashViewController:(AVRUISplashViewController *)controller;
 - (CAAnimation *)animationAtIndex:(NSUInteger)index inSplashViewController:(AVRUISplashViewController *)controller;
 @optional
+- (UIViewController *)segueViewControllerInSplashViewController:(AVRUISplashViewController *)controller;
 - (void)splashViewControllerDidStartAnimations:(AVRUISplashViewController *)controller;
 - (void)splashViewControllerDidCompleteAnimations:(AVRUISplashViewController *)controller;
 - (void)splashViewController:(AVRUISplashViewController *)controller didStartAnimation:(CAAnimation *)animation atIndex:(NSUInteger)index;
